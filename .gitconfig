@@ -1,0 +1,22 @@
+[alias]
+	a = add .
+	cm = commit -m
+	f = fetch
+	l = log
+	pl = pull
+	ps = push
+	s = status
+
+[core]
+	editor = vi
+	excludesFile = ~/.gitignore
+
+[init]
+	defaultBranch = master
+
+[push]
+	autoSetupRemote = true
+
+[user]
+	name = Ben Wolfaardt
+	email = benjaminwolfaardt@gmail.com
