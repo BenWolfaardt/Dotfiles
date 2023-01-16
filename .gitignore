@@ -4,5 +4,8 @@
 # IDE
 .vscode
 
+# Python
+__pycache__
+
 # Virtual Environments
 .venv
