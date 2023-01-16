@@ -40,3 +40,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vi'
 fi
+
+# For interactive shells
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
