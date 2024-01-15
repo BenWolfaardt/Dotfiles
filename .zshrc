@@ -27,7 +27,6 @@ HIST_STAMPS="yyyy/mm/dd"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-    macos
     poetry
 )
 
@@ -47,3 +46,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Set PATH for Poetry.
+export PATH="$HOME/.local/bin:$PATH"
