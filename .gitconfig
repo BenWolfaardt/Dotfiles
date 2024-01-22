@@ -1,8 +1,8 @@
 [alias]
 	a = add .
 	cl = clone
-	co = checkout
 	cm = commit -m
+	co = checkout
 	f = fetch
 	l = log
 	pl = pull
