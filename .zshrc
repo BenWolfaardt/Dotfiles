@@ -41,15 +41,35 @@ else
 fi
 
 # For interactive shells
-# pyenv
+
+#------------- Go -------------#
+# goenv: https://github.com/go-nv/goenv/
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+
+if command -v goenv 1>/dev/null 2>&1; then
+    eval "$(goenv init -)"
+fi
+
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+# Add GO autocompletion
+source ~/.goenv/completions/goenv.zsh
+
+#------------- NVM -------------#
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+#------------- Poetry -------------#
+export PATH="$HOME/.local/bin:$PATH"
+
+#------------- Pyenv -------------#
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# Set PATH for Poetry.
-export PATH="$HOME/.local/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#------------- Rust -------------#
+export PATH="$HOME/.cargo/bin:$PATH"
