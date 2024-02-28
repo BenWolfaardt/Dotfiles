@@ -1,6 +1,9 @@
 # Apple
 .DS_Store
 
+# Environments
+.env
+
 # IDE
 .vscode
 
