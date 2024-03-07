@@ -70,3 +70,6 @@ eval "$(pyenv virtualenv-init -)"
 
 #------------- Rust -------------#
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#------------- Terraform -------------#
+export TF_LOG=1
