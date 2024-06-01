@@ -40,17 +40,10 @@ fi
 
 #------------- Interactive Shells -------------#
 
-#------------- Go -------------#
-# goenv: https://github.com/go-nv/goenv/
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-
+#------------- Goenv -------------#
 if command -v goenv 1>/dev/null 2>&1; then
     eval "$(goenv init -)"
 fi
-
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
 
 # Add GO autocompletion
 source ~/.goenv/completions/goenv.zsh
