@@ -19,8 +19,6 @@ HIST_STAMPS="yyyy/mm/dd"  # Time stamp shown in the history command output.
 #------------- Plugins -------------#
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    poetry
-    poetry-env
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
