@@ -38,17 +38,6 @@ fi
 
 #------------- Interactive Shells -------------#
 
-#------------- Goenv -------------#
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-
-if command -v goenv 1>/dev/null 2>&1; then
-    eval "$(goenv init -)"
-fi
-
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
-
 #------------- NVM -------------#
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
