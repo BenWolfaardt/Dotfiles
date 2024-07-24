@@ -22,3 +22,9 @@
 [user]
 	name = Ben Wolfaardt
 	email = benjaminwolfaardt@gmail.com
+
+[includeIf "gitdir:~/src/kima/"]
+    path = ~/src/kima/.gitconfig
+    
+[url "git@kima.github.com:kima-finance"]
+    insteadOf = https://github.com/kima-finance
