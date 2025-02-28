@@ -22,9 +22,13 @@
 [user]
 	name = Ben Wolfaardt
 	email = benjaminwolfaardt@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAKMjarqY4n9DpOPAKF1mxz0Oq91/vRECmFSs4C2x7o
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
 
 [includeIf "gitdir:~/src/kima/"]
-    path = ~/src/kima/.gitconfig
-    
-[url "git@kima.github.com:kima-finance"]
-    insteadOf = https://github.com/kima-finance
+	path = ~/src/kima/.gitconfig
