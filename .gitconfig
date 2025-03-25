@@ -27,7 +27,7 @@
     force = true  # Overwrite existing local tags with that from the remote
 
 [user]
-		name = Ben Wolfaardt
+	name = Ben Wolfaardt
 	email = benjaminwolfaardt@gmail.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAKMjarqY4n9DpOPAKF1mxz0Oq91/vRECmFSs4C2x7o
 
