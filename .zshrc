@@ -25,6 +25,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+#------------- Wezterm configuration -------------#
+export PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+
 #------------- User configuration -------------#
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
